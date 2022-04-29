@@ -7,6 +7,6 @@ gspread_pandas
 pubchempy
 pysmiles
 networkx
-matplotlib.pyplot
+matplotlib
 datetime
 ssl
