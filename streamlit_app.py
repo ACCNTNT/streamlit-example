@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
     # Disable certificate verification (Not necessary always)
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+#import ssl
+#ssl._create_default_https_context = ssl._create_unverified_context
 
 # Create a Google Authentication connection object
 scope = ['https://spreadsheets.google.com/feeds',
