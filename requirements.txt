@@ -9,4 +9,4 @@ pysmiles
 networkx
 matplotlib
 datetime
-scriptrunner
+script_runner
