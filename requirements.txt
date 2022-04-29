@@ -9,4 +9,3 @@ pysmiles
 networkx
 matplotlib
 datetime
-ssl
