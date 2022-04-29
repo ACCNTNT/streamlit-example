@@ -1,5 +1,12 @@
 #requirements.txt
-gsheetsdb==0.1.13
+gsheetsdb==0.1.13.1
 altair
 pandas
 streamlit
+gspread_pandas
+pubchempy
+pysmiles
+networkx
+matplotlib.pyplot
+datetime
+ssl
