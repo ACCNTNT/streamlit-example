@@ -6,7 +6,7 @@ from gsheetsdb import connect
 
 # Create a connection object.
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["streamlit-crypto_service_account"],
+    st.secrets["gsp_service_account"],
     scopes=[
         "https://www.googleapis.com/auth/spreadsheets",
     ],
