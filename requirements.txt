@@ -10,3 +10,6 @@ networkx
 matplotlib
 datetime
 script_runner
+cryptography
+_cryptography_rsa
+streamlit_app
