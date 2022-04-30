@@ -20,7 +20,7 @@ conn = connect(credentials=credentials)
 #spread = Spread(spreadsheetname)
 
 # Uses st.cache to only rerun when the query changes or after 10 min.
-#@st.cache(ttl=60)
+@st.cache(ttl=60)
 
 # Perform SQL query on the Google Sheet.
 def run_query(query):
