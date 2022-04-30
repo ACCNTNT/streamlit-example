@@ -33,4 +33,4 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 # Print results.
 for row in rows:
-    st.write(f"{row.acronym} has a :{row.definition}:")
+    st.write(f"{row.Acronym} has a :{row.Definition}:")
