@@ -19,9 +19,15 @@ conn = connect(credentials=credentials)
 #spreadsheetname = "Database"
 #spread = Spread(spreadsheetname,client = client)
 
-# Perform SQL query on the Google Sheet.
 # Uses st.cache to only rerun when the query changes or after 10 min.
-@st.cache(ttl=60)
+#@st.cache(ttl=60)
+# Check the connection
+st.write(spread.url)
+
+sh = client.open(spreadsheetname)
+worksheet_list = sh.worksheets()
+
+# Perform SQL query on the Google Sheet.
 def run_query(query):
     rows = conn.execute(query, headers=1)
     rows = rows.fetchall()
