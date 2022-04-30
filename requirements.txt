@@ -11,4 +11,3 @@ matplotlib
 datetime
 script_runner
 cryptography
-streamlit_app
