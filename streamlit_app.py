@@ -13,19 +13,14 @@ credentials = service_account.Credentials.from_service_account_info(
 )
 conn = connect(credentials=credentials)
 
-credentials = service_account.Credentials.from_service_account_info(
-                st.secrets["gcp_service_account"], scopes = scope)
-client = Client(scope=scope,creds=credentials)
-spreadsheetname = Database
-spread = Spread(spreadsheetname)
+#credentials = service_account.Credentials.from_service_account_info(
+              #  st.secrets["gcp_service_account"], scopes = scope)
+#client = Client(scope=scope,creds=credentials)
+#spreadsheetname = Database
+#spread = Spread(spreadsheetname)
 
 # Uses st.cache to only rerun when the query changes or after 10 min.
 #@st.cache(ttl=60)
-# Check the connection
-st.write(spread.url)
-
-sh = client.open(spreadsheetname)
-worksheet_list = sh.worksheets()
 
 # Perform SQL query on the Google Sheet.
 def run_query(query):
