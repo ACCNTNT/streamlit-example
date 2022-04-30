@@ -13,9 +13,9 @@ credentials = service_account.Credentials.from_service_account_info(
 )
 conn = connect(credentials=credentials)
 
-#credentials = service_account.Credentials.from_service_account_info(
+credentials = service_account.Credentials.from_service_account_info(
                 #st.secrets["gcp_service_account"], scopes = scope)
-#client = Client(scope=scope,creds=credentials)
+client = Client(scopes=scopes,creds=credentials)
 spreadsheetname = "Database"
 spread = Spread(spreadsheetname)
 
