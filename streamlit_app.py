@@ -16,8 +16,8 @@ conn = connect(credentials=credentials)
 #credentials = service_account.Credentials.from_service_account_info(
                 #st.secrets["gcp_service_account"], scopes = scope)
 #client = Client(scope=scope,creds=credentials)
-#spreadsheetname = "Database"
-#spread = Spread(spreadsheetname,client = client)
+spreadsheetname = "Database"
+spread = Spread(spreadsheetname)
 
 # Uses st.cache to only rerun when the query changes or after 10 min.
 #@st.cache(ttl=60)
